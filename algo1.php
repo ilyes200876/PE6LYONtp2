@@ -7,7 +7,7 @@
 */
  function mean($nb1, $nb2)
 {
-  return 3 ;
+  return (($nb1 + $nb2) / 2) ;
 }
 
 function testMean_CN1() { 
@@ -19,6 +19,7 @@ function testMean_CN1() {
 }
 
 testMean_CN1();
+echo PHP_EOL;
 
 function testMean_CN2() {
   if (mean(2, 4) == 3.0) { 
@@ -29,6 +30,7 @@ function testMean_CN2() {
 }
 
 testMean_CN2();
+echo PHP_EOL;
 
 function testMean_CN3() {
   if (mean(5, 6) == 5.5) { 
@@ -39,3 +41,5 @@ function testMean_CN3() {
 }
 
 testMean_CN3();
+echo PHP_EOL;
+echo mean(19, 15);
