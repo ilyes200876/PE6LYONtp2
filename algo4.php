@@ -8,10 +8,13 @@
 function sumNIntegers($n)
 {
   $k = 0 ;
-  while ($k < $n) {
-    $k = $k + 1 ;
-  } 
-  return 3 ;
+  if ($n >= 0) {
+    while ($k < $n)  {
+      $k = $k + ($k + 1) ; 
+    }
+    return $k ;
+  }
+  return false ;
 }
 
 function testsumNIntegers_CN1() { 
