@@ -41,9 +41,9 @@ function sumNIntegers($n) {
 
 function testsumNIntegers_CN1() { 
   if (sumNIntegers(1) == 1) { 
-      echo "Test de sumInteger(0) : Réussi " ;
+      echo "Test de sumInteger(1) : Réussi " ;
    } 
-   else { echo "Test de sumInteger(0) : Échec " ; 
+   else { echo "Test de sumInteger(1) : Échec " ; 
   } 
 }
  
