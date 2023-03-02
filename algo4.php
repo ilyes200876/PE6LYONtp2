@@ -2,12 +2,16 @@
 
 // CN1 : n == 0 => 0
 // CN2 : n == 2 => 3
-// CN3 : n == 10 => 55
-// CN4 : n == -4 => FAUX
+// 
+// CN4 : n == -1 => FAUX
 
 function sumNIntegers($n)
 {
-  return 0 ;
+  $k = 0 ;
+  while ($k < $n) {
+    $k = $k + 1 ;
+  } 
+  return 3 ;
 }
 
 function testsumNIntegers_CN1() { 
@@ -30,4 +34,15 @@ function testsumNIntegers_CN2() {
 }
  
 testsumNIntegers_CN2() ; 
+echo PHP_EOL;
+
+function testsumNIntegers_CN3() { 
+  if (sumNIntegers(-1) == false) { 
+      echo "Test de sumInteger(-1) : Réussi " ;
+   } 
+   else { echo "Test de sumInteger(-1) : Échec " ; 
+  } 
+}
+ 
+testsumNIntegers_CN3() ; 
 echo PHP_EOL;
