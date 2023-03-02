@@ -7,7 +7,7 @@
 
 function sumNIntegers($n)
 {
-  $k = 0 ;
+  $k = 0 ; // k : compteur
   if ($n >= 0) {
     while ($k < $n)  {
       $k = $k + ($k + 1) ; 
