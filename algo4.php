@@ -7,11 +7,9 @@
 
 function sumNIntegers($n)
 {
-  $k = 0 ; // k : compteur
+  $k ;
   if ($n >= 0) {
-    while ($k < $n)  {
-      $k = $k + ($k + 1) ; 
-    }
+    $k = ($n * $n/2) + $n/2 ;
     return $k ;
   }
   return false ;
@@ -49,3 +47,4 @@ function testsumNIntegers_CN3() {
  
 testsumNIntegers_CN3() ; 
 echo PHP_EOL;
+echo sumNIntegers(10) ;
