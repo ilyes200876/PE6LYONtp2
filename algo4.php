@@ -7,7 +7,7 @@
 
 function sumNIntegers($n)
 {
-  return 1 ;
+  return 0 ;
 }
 
 function testsumNIntegers_CN1() { 
@@ -19,4 +19,15 @@ function testsumNIntegers_CN1() {
 }
  
 testsumNIntegers_CN1() ; 
+echo PHP_EOL;
+
+function testsumNIntegers_CN2() { 
+  if (sumNIntegers(2) == 3) { 
+      echo "Test de sumInteger(2) : Réussi " ;
+   } 
+   else { echo "Test de sumInteger(2) : Échec " ; 
+  } 
+}
+ 
+testsumNIntegers_CN2() ; 
 echo PHP_EOL;
