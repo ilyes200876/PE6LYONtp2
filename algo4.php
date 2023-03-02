@@ -1,6 +1,6 @@
 <?php
 
-// CN1 : n == 0 => 0
+// CN1 : n == 1 => 1
 // CN2 : n == 2 => 3
 // 
 // CN4 : n == -1 => FAUX
@@ -8,7 +8,7 @@
 function sumNIntegers($n)
 {
   $k ;
-  if ($n >= 0) {
+  if ($n > 0) {
     $k = ($n * $n/2) + $n/2 ;
     return $k ;
   }
@@ -40,7 +40,7 @@ function sumNIntegers($n) {
 */
 
 function testsumNIntegers_CN1() { 
-  if (sumNIntegers(0) == 0) { 
+  if (sumNIntegers(1) == 1) { 
       echo "Test de sumInteger(0) : Réussi " ;
    } 
    else { echo "Test de sumInteger(0) : Échec " ; 
