@@ -15,6 +15,30 @@ function sumNIntegers($n)
   return false ;
 }
 
+/*
+function sumNIntegers($n) {
+    if ($n < 1) {
+        return false;
+    }
+    
+        Déclarer resultat <- 0
+        Déclarer compteur <- 1
+        TANT QUE compteur <= n FAIRE
+            résultat <- résultat + compteur
+            compteur <- compteur + 1
+        FIN TANT QUE
+    
+    $resultat = 0;
+    $compteur = 1;
+    while ($compteur <= $n) {
+        $resultat = $resultat + $compteur;
+        $compteur = $compteur + 1;
+    }
+    return $resultat;
+}
+
+*/
+
 function testsumNIntegers_CN1() { 
   if (sumNIntegers(0) == 0) { 
       echo "Test de sumInteger(0) : Réussi " ;
